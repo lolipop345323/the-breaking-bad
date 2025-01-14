@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <pattern id="gradientPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+                <rect width="20" height="40" fill="#7dc4e8"/>
+                <rect x="20" width="20" height="40" fill="#b1dcf1"/>
+            </pattern>
+            <pattern id="redBackground" width="5" height="5" patternUnits="userSpaceOnUse">
+                <rect width="5" height="5" fill="#ff401a"/>
+                <circle cx="1.5" cy="1.5" r="1" fill="#ffffff"/>
+            </pattern>
+            <mask id="textMask">
+               
+            </mask>
+        </defs>
+        <rect width="300" height="200" fill="url(#gradientPattern)" />
+        <rect x="50" y="50" width="200" height="100" fill="url(#redBackground)" mask="url(#textMask)"/>
+        <text x="20" y="100" font-family="Lobster" font-size="50" fill="black" opacity="0.5">
+            the Breaking
+        </text>
+        <text x="15" y="95" font-family="Lobster" font-size="50" fill="#f4b400" stroke="#ffffff" stroke-width="1.5">
+            the Breaking
+        </text>
+        <text x="100" y="160" font-family="Lobster" font-size="65" fill="black" opacity="0.5">
+            Bad
+        </text>
+        <text x="95" y="155" font-family="Lobster" font-size="65" fill="url(#redBackground)" stroke="#ffffff" stroke-width="1.5">
+            Bad
+        </text>
+    </svg>
+</body>
+</html>
